@@ -2,10 +2,12 @@
 Powershell script to pull Meraki configurations for your organization
 
 Purpose
+
 My purpose in creating this script was to be able to gather configuration data from Meraki equipment in my organization.  I am required to keep baselines, and check for changes on a periodic basis.  The Meraki Change Log does a nice job, but it does not solve the requirement of having a baseline for a device.
 The configuration files that this script delivers are not perfect, but they are significantly better than screen shots.
 
 Variables
+
 This file uses variables that are based on the Meraki Public Sandbox.  Running this script as-is will pull information from that location. You will need to insert your own values for these variables in order to make it work in your environment.  
 The first variable you'll need to update is the $apiKey.  This is available in your Meraki dashboard.
 
@@ -18,6 +20,7 @@ https://documentation.meraki.com/zGeneral_Administration/Other_Topics/The_Cisco_
 
 
 File Output
+
 Finally, I chose to export my files as XML for ease of reading.  And I then chose to concatenate these files together for ease of doc-compare.  
 
 Good luck on your project.
